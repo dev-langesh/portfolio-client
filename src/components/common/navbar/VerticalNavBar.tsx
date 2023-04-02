@@ -13,11 +13,11 @@ export default function VerticalNavBar() {
   return (
     <div
       className={`w-[300px] pt-6 shadow-full shadow-black/50 bg-gray-900 absolute z-50 top-0 bottom-0 ${
-        menu ? "right-0" : "-right-full"
+        menu ? "left-0" : "-left-full"
       } sm:hidden transition-all duration-150`}
     >
       <nav className="flex flex-col space-y-3 w-full">
-        <span className="pr-4 float-right flex items-end justify-end hover:cursor-pointer">
+        <span className="pr-4 flex items-end justify-end hover:cursor-pointer">
           <ClearIcon onClick={() => dispatch(closeMenu())} />
         </span>
         {navData.map((nav) => {
