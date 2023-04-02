@@ -3,8 +3,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import Link from "next/link";
 import { navData } from "./navData";
+import { useAppDispatch } from "@/app/hooks";
+import { openMenu } from "@/features/menu/MenuSlice";
 
 export default function HorizontalNavBar() {
+  const dispatch = useAppDispatch();
+
   return (
     <header className="bg-blue-600 py-1 sm:py-2 px-4 flex items-center justify-between shadow-black shadow-lg">
       <h1 className="text-lg font-semibold font-slab">
@@ -13,7 +17,10 @@ export default function HorizontalNavBar() {
 
       <span className="sm:hidden">
         <IconButton size="small" sx={{ color: "white" }}>
-          <MenuIcon sx={{ fontSize: "23px" }} />
+          <MenuIcon
+            onClick={() => dispatch(openMenu())}
+            sx={{ fontSize: "23px" }}
+          />
         </IconButton>
       </span>
 
