@@ -14,7 +14,11 @@ module.exports = {
       slab: ["Roboto Slab", "serif"],
       poppins: ["Poppins", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        full: "4px 4px 16px 8px rgba(0,0,0,0.3)",
+      },
+    },
   },
   plugins: [],
 };
