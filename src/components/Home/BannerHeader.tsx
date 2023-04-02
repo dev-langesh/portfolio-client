@@ -4,8 +4,8 @@ export default function BannerHeader() {
   return (
     <header>
       <h1 className="text-lg font-bold font-slab">
-        I'm <span className="text-blue-600 pl-2 text-2xl">Langesh</span>{" "}
-        <span className="text-xl font-slab">,</span>
+        I&apos;m <span className="text-blue-600 pl-2 text-2xl">Langesh</span>{" "}
+        <span className="text-xl font-slab">&apos;</span>
       </h1>
 
       <h3 className="text-slate-400 text-sm">
