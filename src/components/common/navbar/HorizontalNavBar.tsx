@@ -10,7 +10,7 @@ export default function HorizontalNavBar() {
   const dispatch = useAppDispatch();
 
   return (
-    <header className="bg-blue-600 py-1 sm:py-2 px-4 flex items-center justify-between shadow-black shadow-lg">
+    <header className="bg-blue-600 py-2 px-4 flex items-center justify-between shadow-black shadow-lg sticky top-0">
       <h1 className="text-lg font-semibold font-slab">
         <Link href="/">Portfolio</Link>
       </h1>
