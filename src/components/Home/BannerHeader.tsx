@@ -9,7 +9,7 @@ export default function BannerHeader() {
       </h1>
 
       <h3 className="text-slate-400 text-sm">
-        FullStack Developer | Freelancer | Web Scrapper | Cloud Development
+        FullStack Developer | Freelancer | Web Scrapper | Cloud Computing
         Enthusiast
       </h3>
     </header>
