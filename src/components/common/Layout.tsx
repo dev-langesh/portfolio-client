@@ -4,7 +4,7 @@ import VerticalNavBar from "./navbar/VerticalNavBar";
 
 export default function Layout({ children }: { children: React.ReactElement }) {
   return (
-    <div className="bg-gray-900 w-screen h-screen overflow-x-hidden overflow-y-auto text-white font-roboto">
+    <div className="w bg-gray-900 w-screen h-screen overflow-x-hidden overflow-y-auto text-white font-roboto">
       <HorizontalNavBar />
       <VerticalNavBar />
       {children}
