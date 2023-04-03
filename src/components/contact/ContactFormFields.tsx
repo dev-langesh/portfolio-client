@@ -14,7 +14,7 @@ export default function ContactFormFields() {
             <textarea
               className="w-full bg-transparent border border-slate-400 py-1 px-2"
               name={inp.name}
-              id=""
+              key={inp.id}
               cols={21}
               rows={5}
               placeholder={inp.placeholder}
