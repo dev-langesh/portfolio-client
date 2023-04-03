@@ -6,6 +6,11 @@ type navDataType = {
 
 export const navData: navDataType[] = [
   {
+    id: 0,
+    href: "/",
+    title: "Profile",
+  },
+  {
     id: 1,
     href: "/services",
     title: "Services",
@@ -24,5 +29,10 @@ export const navData: navDataType[] = [
     id: 4,
     href: "/achievements",
     title: "Achievements",
+  },
+  {
+    id: 5,
+    href: "/contact",
+    title: "Contact",
   },
 ];
