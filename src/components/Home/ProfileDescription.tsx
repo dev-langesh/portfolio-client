@@ -11,7 +11,7 @@ export default function ProfileDescription() {
       <span className="font-bold text-blue-600">Level One Seller </span> on{" "}
       <Link
         target="_blank"
-        className="font-bold font-slate text-green-600 hover:underline"
+        className="font-bold font-slate text-blue-600 hover:underline"
         href="https://www.fiverr.com/dev_langesh"
       >
         Fiverr
