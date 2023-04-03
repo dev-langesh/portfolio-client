@@ -1,16 +1,16 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
-import { serviceData } from "./serviceData";
+import ProjectCard from "./ProjectCard";
+import { projectData } from "./projectData";
 
-export default function Service() {
+export default function Projects() {
   return (
     <div className="p-6">
       <h1 className="text-center text-xl md:text-2xl font-bold font-slab tracking-wider pb-2">
-        Services
+        Some of my Projects
       </h1>
       <div className=" flex items-center justify-center flex-wrap">
-        {serviceData.map((service) => {
-          return <ServiceCard key={service.id} {...service} />;
+        {projectData.map((project) => {
+          return <ProjectCard key={project.id} {...project} />;
         })}
       </div>
     </div>

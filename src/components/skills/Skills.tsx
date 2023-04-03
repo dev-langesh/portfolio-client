@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <div className="p-6">
       <h1 className="text-center text-xl md:text-2xl font-bold font-slab tracking-wider pb-2">
-        Skills
+        My Skills
       </h1>
       {skillData.map((skills) => {
         return <SkillCard key={skills.id} {...skills} />;
