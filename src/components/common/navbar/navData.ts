@@ -22,7 +22,7 @@ export const navData: navDataType[] = [
   },
   {
     id: 4,
-    href: "/certifications",
-    title: "Certifications",
+    href: "/achievements",
+    title: "Achievements",
   },
 ];
