@@ -8,7 +8,7 @@ import ProfileImage from "./ProfileImage";
 
 export default function Banner() {
   return (
-    <div className="p-6 space-y-2 flex flex-col md:flex-row items-center justify-center">
+    <div className="p-6 md:pt-20 space-y-2 flex flex-col md:flex-row items-center justify-center">
       <section className="md:w-1/2 space-y-1">
         <BannerHeader />
 
