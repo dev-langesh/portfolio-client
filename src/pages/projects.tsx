@@ -7,8 +7,8 @@ export default function ProjectsPage() {
     <>
       <Head>
         <title>Projects</title>
-        <Projects />;
       </Head>
+      <Projects />
     </>
   );
 }
