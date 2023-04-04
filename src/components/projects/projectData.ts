@@ -38,7 +38,7 @@ export const projectData: projectDataType[] = [
     image: "/images/projects/university.png",
     title: "University Extension Unit",
     description:
-      "I have build this project for my client. This application enable the university to manage the sessions",
+      "I have build this project for my client. This application enable the university to manage the classrooms",
   },
   {
     id: 5,
@@ -52,6 +52,6 @@ export const projectData: projectDataType[] = [
     image: "/images/projects/image-editor.png",
     title: "Image Editor",
     description:
-      "This application is a web based image editor. Throw this the user can easily edit the images they want.",
+      "This application is a web based image editor. Through this the user can easily edit the images they want.",
   },
 ];

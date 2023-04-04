@@ -12,7 +12,7 @@ export default function VerticalNavBar() {
 
   return (
     <div
-      className={`w-[300px] pt-6 shadow-full shadow-black/50 bg-gray-900 absolute z-50 top-0 bottom-0 ${
+      className={`w-[300px] pt-6 h-screen shadow-full shadow-black/50 bg-gray-900 absolute z-50 top-0 bottom-0 ${
         menu ? "left-0" : "-left-full"
       } sm:hidden transition-all duration-150`}
     >
