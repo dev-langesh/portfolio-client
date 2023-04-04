@@ -8,7 +8,7 @@ export default function ContactPage() {
       <Head>
         <title>Contact</title>
       </Head>
-      <Contact />;
+      <Contact />
     </>
   );
 }

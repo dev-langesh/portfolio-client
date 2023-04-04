@@ -8,7 +8,7 @@ export default function AchievementsPage() {
       <Head>
         <title>Achievements</title>
       </Head>
-      <Achievements />;
+      <Achievements />
     </>
   );
 }
