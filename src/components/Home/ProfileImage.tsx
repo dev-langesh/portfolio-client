@@ -8,7 +8,7 @@ export default function ProfileImage() {
         width={240}
         height={340}
         src="/images/profile.jpg"
-        alt="Profile Image"
+        alt="Langesh profile image"
         className="shadow-xl shadow-black rounded-sm"
       ></Image>
     </section>

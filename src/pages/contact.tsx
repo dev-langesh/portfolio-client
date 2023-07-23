@@ -6,7 +6,11 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Contact Langesh</title>
+        <meta
+          name="description"
+          content="Get in touch with me, an experienced full stack developer, to discuss your projects and collaborations."
+        />
       </Head>
       <Contact />
     </>

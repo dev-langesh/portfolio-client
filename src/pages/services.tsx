@@ -6,7 +6,11 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Services</title>
+        <title>Services | Langesh</title>
+        <meta
+          name="description"
+          content="Explore the professional services I offer as a full stack developer, providing top-notch solutions for your projects."
+        />
       </Head>
       <Service />
     </>

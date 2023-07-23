@@ -4,6 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta
+          name="description"
+          content="As an experienced full stack developer with a strong background in the MERN stack and over 2 years of industry experience, I have successfully completed over 40 orders for clients on Fiverr, earning the status of a Level One seller. With expertise in AWS and DevOps, I am now excited to showcase my skills and accomplishments through my portfolio, where I aim to deliver the best and most effective solutions for your projects."
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

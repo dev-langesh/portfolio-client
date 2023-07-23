@@ -6,7 +6,11 @@ export default function SkillsPage() {
   return (
     <>
       <Head>
-        <title>Skills</title>
+        <title>Skills | Langesh</title>
+        <meta
+          name="description"
+          content="Discover my diverse skill set as an experienced full stack developer with expertise in the MERN stack, AWS, and DevOps."
+        ></meta>
       </Head>
       <Skills />
     </>
