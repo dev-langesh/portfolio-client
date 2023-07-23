@@ -11,12 +11,12 @@ export default function ContactIcons() {
       <Link target="_blank" href="https://www.fiverr.com/dev_langesh">
         <SiFiverr className="text-4xl hover:text-green-600" />
       </Link>
-      <Link
+      {/* <Link
         target="_blank"
         href="https://www.upwork.com/freelancers/~019aaa3e0c4ca50598"
       >
         <SiUpwork className="text-xl hover:text-green-600" />
-      </Link>
+      </Link> */}
 
       <Link target="_blank" href="https://github.com/dev-langesh/">
         <GitHubIcon className="hover:text-white" />
@@ -27,12 +27,12 @@ export default function ContactIcons() {
       >
         <LinkedInIcon className="hover:text-blue-700" />
       </Link>
-      <Link
+      {/* <Link
         target="_blank"
         href="https://stackoverflow.com/users/20469298/langesh"
       >
         <BsStackOverflow className="text-xl hover:text-white" />
-      </Link>
+      </Link> */}
     </section>
   );
 }

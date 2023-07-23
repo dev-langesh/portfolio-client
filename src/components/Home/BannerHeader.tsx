@@ -10,8 +10,8 @@ export default function BannerHeader() {
       </h1>
 
       <h3 className="text-slate-400 text-sm md:text-[16px]">
-        FullStack Developer | Freelancer | Web Scrapper | Cloud Computing
-        Enthusiast
+        Full Stack Developer | Freelancer on Fiverr | Proficient in AWS and
+        DevOps
       </h3>
     </header>
   );

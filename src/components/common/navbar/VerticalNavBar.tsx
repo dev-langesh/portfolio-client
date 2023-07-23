@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "@/app/hooks";
+import { useAppDispatch, useAppSelector } from "@/reduxapp/hooks";
 import { closeMenu, selectMenu } from "@/features/menu/MenuSlice";
 import Link from "next/link";
 import React from "react";

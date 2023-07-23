@@ -3,24 +3,28 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import Link from "next/link";
 import { navData } from "./navData";
-import { useAppDispatch } from "@/app/hooks";
+import { useAppDispatch } from "@/reduxapp/hooks";
 import { openMenu } from "@/features/menu/MenuSlice";
 
 export default function HorizontalNavBar() {
   const dispatch = useAppDispatch();
 
   return (
-    <header className="bg-blue-600 py-2 px-4 flex items-center justify-between shadow-black shadow-lg sticky top-0">
+    <header className="bg-blue-600 h-14 px-4 flex items-center justify-between shadow-black shadow-lg sticky top-0">
       <h1 className="text-lg font-semibold font-slab">
-        <Link href="/">Portfolio</Link>
+        <Link className="" href="/">
+          Langesh <span className="pl-4">Portfolio</span>
+        </Link>
+        <span className="bg-gray-900 shadow-lsm animate-width-in w-0 h-14 absolute top-0 left-0 -z-10  transform -skew-x-16 -translate-x-8 block "></span>
       </h1>
 
       <span className="sm:hidden">
-        <IconButton size="small" sx={{ color: "white" }}>
-          <MenuIcon
-            onClick={() => dispatch(openMenu())}
-            sx={{ fontSize: "23px" }}
-          />
+        <IconButton
+          onClick={() => dispatch(openMenu())}
+          size="small"
+          sx={{ color: "white" }}
+        >
+          <MenuIcon sx={{ fontSize: "23px" }} />
         </IconButton>
       </span>
 

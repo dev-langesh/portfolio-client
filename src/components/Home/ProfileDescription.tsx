@@ -3,29 +3,21 @@ import React, { Children } from "react";
 
 export default function ProfileDescription() {
   return (
-    <p className="pt-3 text-slate-200 md:text-[20px]">
-      I&apos;m a FullStack Developer who loves to build inovative projects.
-      I&apos;m in this field for more than 2 years. I have completed 35+ orders
-      in <Highlight>Fiverr</Highlight> and 7+ contracts from{" "}
-      <Highlight>Upwork</Highlight> in clients under different nations with high
-      ratings.
-      {/* and I&apos;m a{" "}
-      <span className="font-bold text-blue-600">Level One Seller </span> on{" "}
-      <Link
-        target="_blank"
-        className="font-bold font-slate text-blue-600 hover:underline"
-        href="https://www.fiverr.com/dev_langesh"
-      >
-        Fiverr
-      </Link>
-      . */}
+    <p className="pt-3 text-slate-300 md:text-[18px]">
+      As an experienced full stack developer with a strong background in the
+      MERN stack and over 2 years of experience, I have successfully completed
+      over 40 orders from clients on <Highlight>Fiverr</Highlight>, earning the
+      status of a <Highlight>Level One seller</Highlight>. With expertise in AWS
+      and DevOps, I am now excited to showcase my skills and accomplishments
+      through my portfolio, where I aim to deliver the best and most effective
+      solutions for your projects.
     </p>
   );
 }
 
 function Highlight({ children }: { children: string }) {
   return (
-    <span className="font-bold font-slate text-blue-600 hover:underline">
+    <span className="font-bold font-slate text-yellow-500 hover:underline">
       {children}
     </span>
   );

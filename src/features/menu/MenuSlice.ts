@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import type { RootState } from "@/app/store";
+import type { RootState } from "@/reduxapp/store";
 
 interface menuState {
   value: boolean;
