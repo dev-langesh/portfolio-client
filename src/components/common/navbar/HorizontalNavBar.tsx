@@ -15,7 +15,7 @@ export default function HorizontalNavBar() {
         <Link className="" href="/">
           Langesh <span className="pl-4">Portfolio</span>
         </Link>
-        <span className="bg-blue-800 shadow-lsm animate-width-in w-0 h-14 absolute top-0 left-0 -z-10  transform -skew-x-30 -translate-x-8 block "></span>
+        <span className="bg-blue-900 shadow-lsm animate-width-in w-0 h-14 absolute top-0 left-0 -z-10  transform -skew-x-30 -translate-x-8 block "></span>
       </h1>
 
       <span className="sm:hidden">
