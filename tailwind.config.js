@@ -20,7 +20,10 @@ module.exports = {
         lsm: "0px 2px 2px 2px rgba(0,0,0,0.3)",
       },
       skew: {
-        16: "16deg", // You can add more custom skew values here if needed
+        16: "16deg",
+        20: "20deg",
+        20: "20deg",
+        30: "30deg",
       },
 
       keyframes: {
@@ -44,6 +47,18 @@ module.exports = {
           "0%": { height: "0px" },
           "100%": { height: "100vh" },
         },
+        "content-up": {
+          "0%": { transform: "translateY(100px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
+        "content-down": {
+          "0%": { transform: "translateY(-50px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
+        "content-ltr": {
+          "0%": { transform: "translateX(-50px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
       },
 
       animation: {
@@ -52,6 +67,9 @@ module.exports = {
         "hill-up-sm": "hill-up-sm 0.9s ease-out 0.8s forwards",
         "hill-up-xs": "hill-up-xs 0.9s ease-out 1s forwards",
         "height-up": "height-up 0.5s ease-out 2.1s forwards",
+        "content-up": "content-up 0.5s ease-out forwards",
+        "content-down": "content-down 0.5s ease-out forwards",
+        "content-ltr": "content-ltr 0.5s ease-out forwards",
       },
     },
   },

@@ -8,7 +8,7 @@ export default function SkillsPage() {
       <Head>
         <title>Skills</title>
       </Head>
-      <Skills />;
+      <Skills />
     </>
   );
 }

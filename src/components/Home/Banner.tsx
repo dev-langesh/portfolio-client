@@ -14,11 +14,13 @@ export default function Banner() {
 
         <ProfileDescription />
 
-        <ContactIcons />
+        <div className="animate-content-up">
+          <ContactIcons />
 
-        <br />
+          <br />
 
-        <Button>Contact Me</Button>
+          <Button>Contact Me</Button>
+        </div>
       </section>
 
       <ProfileImage />

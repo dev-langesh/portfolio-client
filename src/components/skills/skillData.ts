@@ -33,23 +33,26 @@ export const skillData: skillsType[] = [
   {
     id: 3,
     category: "AWS",
-    skills: ["EC2", "Lambda", "S3", "ECS", "EKS", "Route 53", "EFS"],
+    skills: [
+      "IAM",
+      "VPC",
+      "Route 53",
+      "EC2",
+      "Lambda",
+      "Api Gateway",
+      "S3",
+      "ECS",
+      "EKS",
+    ],
   },
   {
     id: 4,
     category: "Devops",
-    skills: [
-      "Docker",
-      "Kubernetes",
-      "Git",
-      "Github Actions",
-      "Jest",
-      "Selenium",
-    ],
+    skills: ["Docker", "Kubernetes", "Git", "Jenkins", "Ansible", "Terraform"],
   },
-  {
-    id: 5,
-    category: "Web Scraping",
-    skills: ["Scrapy", "Selenium", "Python", "Beautiful Soup"],
-  },
+  // {
+  //   id: 5,
+  //   category: "Web Scraping",
+  //   skills: ["Scrapy", "Selenium", "Python", "Beautiful Soup"],
+  // },
 ];

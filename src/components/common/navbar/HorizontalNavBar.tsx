@@ -10,12 +10,12 @@ export default function HorizontalNavBar() {
   const dispatch = useAppDispatch();
 
   return (
-    <header className="bg-blue-600 h-14 px-4 flex items-center justify-between shadow-black shadow-lg sticky top-0">
+    <header className="bg-blue-600 h-14 px-4 flex items-center justify-between shadow-black shadow-lg sticky z-50 top-0">
       <h1 className="text-lg font-semibold font-slab">
         <Link className="" href="/">
           Langesh <span className="pl-4">Portfolio</span>
         </Link>
-        <span className="bg-gray-900 shadow-lsm animate-width-in w-0 h-14 absolute top-0 left-0 -z-10  transform -skew-x-16 -translate-x-8 block "></span>
+        <span className="bg-blue-800 shadow-lsm animate-width-in w-0 h-14 absolute top-0 left-0 -z-10  transform -skew-x-30 -translate-x-8 block "></span>
       </h1>
 
       <span className="sm:hidden">

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BannerHeader() {
   return (
-    <header>
+    <header className="animate-content-down z-0">
       <h1 className="text-lg md:text-xl font-bold font-slab">
         I&apos;m
         <span className="text-blue-600 pl-2 text-2xl md:text-3xl">Langesh</span>
