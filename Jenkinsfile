@@ -9,18 +9,17 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'docker build -t devlangesh/portfolio:$BUILD_NUMBER .'
+        sh 'sudo docker build -t devlangesh/portfolio:$BUILD_NUMBER .'
       }
     }
 
-    stage('docker hub push'){
-
-       steps {
+    stage('docker hub push') {
+      steps {
         withCredentials(bindings: [[$class: 'UsernamePasswordMultiBinding', credentialsId:'auth_dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']                                                                   ]) {
-          sh 'docker login -u $USERNAME -p $PASSWORD'
+          sh 'sudo docker login -u $USERNAME -p $PASSWORD'
         }
 
-        sh 'docker push "devlangesh/portfolio:$BUILD_NUMBER"'
+        sh 'sudo docker push "devlangesh/portfolio:$BUILD_NUMBER"'
       }
     }
 
