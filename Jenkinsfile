@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'docker build -t portfolio .'
+        sh 'docker build -t devlangesh/portfolio:$BUILD_NUMBER .'
       }
     }
 
