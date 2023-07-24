@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('list') {
+    stage('build') {
       steps {
-        sh 'ls'
+        sh 'docker build -t portfolio .'
       }
     }
 
