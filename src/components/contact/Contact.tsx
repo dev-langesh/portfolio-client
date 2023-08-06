@@ -42,6 +42,7 @@ export default function Contact() {
     if (res.status === 200) setReqState("success");
     else setReqState("error");
 
+    setFormData(initialState);
     setOpen(true);
   }
 

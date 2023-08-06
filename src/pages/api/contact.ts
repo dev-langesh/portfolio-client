@@ -8,7 +8,7 @@ export default async function handler(
   if (req.method === "POST") {
     const { to, name, subject, text } = req.body;
 
-    const clientInfo = `NAME: ${name} \nEMAIL: ${to} \nBODY:${text}`;
+    const clientInfo = `NAME: ${name} \nEMAIL: ${to} \nBODY: ${text}`;
 
     // Set up Nodemailer transporter
     const transporter = nodemailer.createTransport({
