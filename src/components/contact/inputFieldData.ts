@@ -13,7 +13,7 @@ export const inputFieldData: inputFieldDataType[] = [
   },
   {
     id: 2,
-    name: "email",
+    name: "to",
     placeholder: "Email",
   },
   {
@@ -23,7 +23,7 @@ export const inputFieldData: inputFieldDataType[] = [
   },
   {
     id: 4,
-    name: "body",
+    name: "text",
     placeholder: "Body",
     inputType: "text area",
   },
