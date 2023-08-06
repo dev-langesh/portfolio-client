@@ -39,7 +39,7 @@ export default function ContactFormFields({
         }
         return (
           <input
-            type="text"
+            type={inp.inputType ? inp.inputType : "text"}
             key={inp.id}
             name={inp.name}
             value={formData[inp.name]}

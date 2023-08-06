@@ -14,6 +14,7 @@ export const inputFieldData: inputFieldDataType[] = [
   {
     id: 2,
     name: "to",
+    inputType: "email",
     placeholder: "Email",
   },
   {
