@@ -50,6 +50,7 @@ export default function Contact() {
           <br />
           <button
             type="submit"
+            disabled={reqState === "loading"}
             className=" text-sm px-3 py-2 border bg-blue-600 border-blue-600 hover:bg-transparent hover:text-blue-600 block w-full text-center font-slab"
           >
             {reqState === "loading" ? "Loading..." : "Send"}
