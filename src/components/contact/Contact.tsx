@@ -3,11 +3,11 @@ import Button from "../common/Button";
 import ContactFormFields from "./ContactFormFields";
 import axios from "axios";
 import { Alert, Snackbar } from "@mui/material";
+import { Form, Formik } from "formik";
 
-const initialState = { to: "", text: "", subject: "" };
+const initialState = { to: "", text: "", subject: "", name: "" };
 
 export default function Contact() {
-  const [formData, setFormData] = useState(initialState);
   const [reqState, setReqState] = useState("default");
   const [open, setOpen] = useState(false);
 
@@ -22,45 +22,40 @@ export default function Contact() {
     setOpen(false);
   };
 
-  async function handleSubmit(e: React.SyntheticEvent) {
-    e.preventDefault();
-
+  async function handleSubmit(formData: any) {
+    console.log(formData);
     const formValues = Object.values(formData);
-
-    const emptyValue = formValues.find((val) => val.trim() === "");
-
+    const emptyValue = formValues.find((val: any) => val.trim() === "");
     if (emptyValue === "") {
       setReqState("error");
       setOpen(true);
       return;
     }
-
     setReqState("loading");
-
     const res = await axios.post("/api/contact", formData);
-
     if (res.status === 200) setReqState("success");
     else setReqState("error");
-
-    setFormData(initialState);
+    // setFormData(initialState);
     setOpen(true);
   }
 
   return (
     <div className="p-6 flex items-center justify-center">
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-3 w-11/12 sm:w-2/3 md:w-[400px] pt-4"
+      <Formik
+        initialValues={initialState}
+        onSubmit={(values) => handleSubmit(values)}
       >
-        <ContactFormFields formData={formData} setFormData={setFormData} />
-        <br />
-        <button
-          type="submit"
-          className=" text-sm px-3 py-2 border bg-blue-600 border-blue-600 hover:bg-transparent hover:text-blue-600 block w-full text-center font-slab"
-        >
-          {reqState === "loading" ? "Loading..." : "Send"}
-        </button>
-      </form>
+        <Form className="space-y-3 w-11/12 sm:w-2/3 md:w-[400px] pt-4">
+          <ContactFormFields />
+          <br />
+          <button
+            type="submit"
+            className=" text-sm px-3 py-2 border bg-blue-600 border-blue-600 hover:bg-transparent hover:text-blue-600 block w-full text-center font-slab"
+          >
+            {reqState === "loading" ? "Loading..." : "Send"}
+          </button>
+        </Form>
+      </Formik>
 
       {reqState === "success" && (
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
